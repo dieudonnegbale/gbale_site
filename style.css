@@ -104,4 +104,31 @@ footer {
     gap: 10px;
   }
 }
+.bio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.bio-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.bio-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.bio-text p {
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 ```

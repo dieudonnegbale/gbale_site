@@ -1,0 +1,157 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+header {
+    background: #1a1a2e;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 5px solid #00f7ff;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #1a1a2e;
+    background: #00f7ff;
+    border: 2px solid #00f7ff;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #00f7ff88;
+}
+
+
+.intro {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 5px solid #00f7ff;
+    border-bottom: 5px solid #00f7ff;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #e0678c;
+    box-shadow: 0 0 15px #00f7ff80;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+.bio {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.welcome {
+    font-size: 18px;
+    color: #00f7ff;
+    font-style: italic;
+}
+
+footer {
+    background: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 5px solid #00f7ff;
+}
+footer p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+*/coleur pour chacun sociaux
+.social-icons .whatshapp {
+    background: #25d366;
+}
+.social-icons .facebook {
+    background: #1877f2;
+}
+.social-icons .instagram {
+    background: #e1306c;
+}
+.social-icons .twitter {
+    background: #555555;
+}
+.social-icons .email {
+    background: #1da1f2;
+}
+.social-icons .linkedin {
+    background: #0a66c2;
+}
+/*effet au survol*/
+.social-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha)(0,247,255,0.5);
+    opacity: 0.9;
+}
+/styapropos/
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: 00ccff;
+}
+/parti cv 
+
+.container2 {
+    
+}
+header {
+    text-align: ;
+    margin-bottom: 30px;
+}

@@ -2,95 +2,58 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <!-- Favicon -->
-  <link rel="icon" href="favicon.png" type="image/png">
-
-
-  <!-- SEO -->
-  <title>Portfolio de Dieu Donnée Gbale | Informatique & Design</title>
-  <meta name="description" content="Portfolio de Dieu Donnée Gbale, étudiant finaliste en informatique de gestion à l'ISS Kinshasa. Découvrez mes projets, compétences et parcours.">
-  <meta name="keywords" content="Dieu Donnée Gbale, Informatique de gestion, Développement web, Excel, Photoshop, Portfolio, Kinshasa, ISS">
-  <meta name="author" content="Dieu Donnée Gbale">
-  <meta name="robots" content="index, follow">
-
-  <!-- Réseaux sociaux (Open Graph) -->
-  <meta property="og:title" content="Dieu Donnée Gbale - Portfolio" />
-  <meta property="og:description" content="Étudiant passionné par l'informatique, les projets web et la conception graphique." />
-  <meta property="og:image" content="photo.jpg" />
-  <meta property="og:url" content="https://dieudonnegbale.github.io/gbale_site/" />
-  <meta property="og:type" content="website" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Site Étudiant</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+ 
 <body>
-<header> 
-  <nav>
-    <ul class="menu">
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#apropos">À propos</a></li>
-      <li><a href="#projet">Projet</a></li>
-      <li><a href="#cv">Mon CV</a></li>
-      <li><a href="zcompetence.html">Compétences</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <h1 class="logo">Mon Portfolio</h1>
+    
+    <!-- Menu hamburger mobile -->
+    <div class="burger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
 
-<section id="accueil" class="section">
-  <h1>Bienvenue !</h1>
-  <p>Bienvenue sur mon site . Vous trouverez ici mes projets, mon parcours et mes compétences.</p>
-</section>
+    <nav id="nav">
+      <ul>
+        <li><a href="zaccueil.html">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Rechercher..." />
+        <button onclick="searchSite()">🔍</button>
+      </div>
+    </nav>
+  </header>
 
-<section class="bio-section">
-  <img src="photo.jpg" alt="Photo de Dieu Donnée Gbale" class="bio-image">
-  <div class="bio-text">
-    <h2>À propos de moi</h2>
-    <p>
-      Je suis Dieu Donnée Gbale, étudiant finaliste en informatique de gestion à l’Institut Supérieur de Statistique de Kinshasa (ISS/Kin).
-      Passionné par la conception et les nouvelles technologies, je suis toujours motivé à apprendre, créer et résoudre des problèmes.
-    </p>
-  </div>
-</section>
-<section id="projet" class="section">
-  <h2>Projets</h2>
-  <p>Voici quelques projets que j'ai réalisés... <a href="#">Voir plus</a></p>
-</section>
-
-<section id="cv" class="section">
-  <h2>Mon CV</h2>
-  <p><a href="cv.pdf" target="_blank">Télécharger mon CV ici</a></p>
-</section>
-
-<section id="competences" class="section">
+  <main>
+   <section id="competences">
   <h2>Compétences</h2>
-  <ul>
-    <li>Développement Web</li>
-    <li>HTML / CSS / JS</li>
-    <li>Microsoft Excel</li>
-    <li>Microsoft Word</li>
-    <li>Adobe Photoshop</li>
-    <li>Gestion de base de données</li>
-  </ul>
+  <p>Voici mes compétences techniques.</p>
 </section>
 
-<section class="section social">
-  <h2>Suivez-moi sur les réseaux</h2>
-  <br>
-  <div class="social-icons">
-    <a href="https://wa.me/243826660225" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://instagram.com/tonprofil" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/share/1B25JqYFfq/?mibextid=wwXIfr" class="facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.linkedin.com/in/dieu-gbale-11ab09374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://x.com/dgbale01?s=21" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="dieugbale69@gmail.com" class="gmail"><i class="fas fa-envelope"></i></a>
-    <a href="https://www.tiktok.com/@gbd5778?_t=ZM-8yIDdrG1veC&_r=1" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
-  </div>
+<section id="projets">
+  <h2>Projets</h2>
+  <p>Liste de mes projets étudiants.</p>
 </section>
 
-<footer>
-  <p>&copy; 2025 Dieu Donnée Gbale</p>
-</footer>
+<section id="apropos">
+  <h2>À propos</h2>
+  <p>Je suis étudiant passionné de développement web.</p>
+</section>
 
+  </main>
+
+  <footer>
+    <a href="#accueil" class="retour">↑ Retour en haut</a>
+  </footer>
+
+ <script src="script.js"></script>
 </body>
 </html>

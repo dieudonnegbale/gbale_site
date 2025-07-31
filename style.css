@@ -1,134 +1,145 @@
-
-
-
-
+/* GLOBAL */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-
 body {
+  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0d0d2b;
-  color: white;
+  background: #f5f7fa;
+  color: #222;
+  scroll-behavior: smooth;
 }
 
 header {
-  background: #1a1a3d;
-  padding: 15px 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007acc;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: white;
 }
 
-.menu {
-  list-style: none;
+.logo {
+  font-size: 24px;
+}
+
+nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
-.menu a {
-  color: #fff;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  position: relative;
-}
-
-.menu a::after {
-  content: '';
-  display: block;
-  height: 2px;
-  background: #00ffff;
-  transform: scaleX(0);
   transition: 0.3s;
-  transform-origin: left;
 }
 
-.menu a:hover::after {
-  transform: scaleX(1);
-}
-
-.section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.section a {
-  color: #00ffff;
+nav a:hover {
   text-decoration: underline;
-  font-weight: bold;
 }
 
-.section a:hover {
-  color: #ff00ff;
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.social-icons {display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-  flex-wrap: wrap;
+.search-container input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
 }
 
-.social-icons a {
-  font-size: 28px;
-  padding: 12px;
-  border-radius: 50%;
-  color: white;
-  transition: 0.3s;
+.search-container button {
+  background: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.search-container button:hover {
+  transform: scale(1.1);
 }
 
-.social-icons a:hover {
-  transform: scale(1.2);
+section {
+  padding: 60px 20px;
+  animation: fadeInUp 1s ease both;
 }
-
-.whatsapp { background: #25d366; }
-.instagram { background: #e1306c; }
-.facebook { background: #3b5998; }
-.linkedin { background: #0077b5; }
-.twitter { background: #1da1f2; }
-.gmail { background: #ea4335; }
-.tiktok { background: #000000; }
 
 footer {
-  background-color: #1a1a3d;
   text-align: center;
   padding: 15px;
-  margin-top: 30px;
+  background: #eee;
 }
 
-@media (max-width: 600px) {
-  .menu {
-    flex-direction: column;
-    gap: 10px;
+.retour {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007acc;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
-.bio-section {
-  display: flex;
+
+/* BURGER MENU MOBILE */
+.burger {
+  display: none;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
+  cursor: pointer;
+  gap: 5px;
+}
+.burger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
 }
 
-.bio-image {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #007acc;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
 
-.bio-text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
+  nav.show {
+    display: flex;
+  }
 
-.bio-text p {
-  max-width: 600px;
-  font-size: 1rem;
-  line-height: 1.6;
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .burger {
+    display: flex;
+  }
 }
-```

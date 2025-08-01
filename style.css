@@ -5,84 +5,55 @@ body {
   background: #f4f4f4;
   color: #333;
 }
-/* Style de base */
-.navbar {
+nav {
+  background: #fff;
+  padding: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #007bff;
-  padding: 10px 20px;
-  color: white;
 }
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-}
-
-/* Menu principal */
-.nav-links ul {
-  display: flex;
-  gap: 20px;
+.nav-links {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  gap: 1em;
 }
-
-.nav-links ul li a {
+.nav-links a {
   text-decoration: none;
-  color: white;
-  font-weight: 500;
+  color: #333;
 }
-
-/* Recherche */
-.search input {
-  padding: 5px 10px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
+.hero {
+  text-align: center;
+  padding: 100px 20px;
 }
-
-/* Bouton hamburger */
-.menu-toggle {
+#searchInput {
+  padding: 0.5em;
+  font-size: 1em;
+}
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
+}
+search-results {
+  background: white;
+  border: 1px solid #ccc;
+  max-width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #007bff;
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .search {
-    margin-top: 10px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
+.search-results a {
+  display: block;
+  padding: 5px 0;
+  color: #0077cc;
+  text-decoration: none;
 }
+
+.search-results a:hover {
+  text-decoration: underline;
 }
 button {
   padding: 10px 20px;

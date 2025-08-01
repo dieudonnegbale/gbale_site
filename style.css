@@ -140,9 +140,10 @@ footer p {
 /* RESPONSIVE */
 .menu-toggle {
   display: none;
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
 }
+
 @media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -162,6 +163,6 @@ footer p {
   }
   .menu-toggle {
     display: block;
-    color: #333;
+    margin-bottom: 10px;
   }
 }

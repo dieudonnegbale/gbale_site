@@ -142,6 +142,7 @@ footer p {
   display: none;
   font-size: 28px;
   cursor: pointer;
+  user-select: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -153,10 +154,6 @@ footer p {
     flex-direction: column;
     width: 100%;
     display: none;
-  }
-  .nav-links li {
-    width: 100%;
-    padding: 10px 0;
   }
   .nav-links.show {
     display: flex;

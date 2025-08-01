@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil - Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <input type="text" id="searchInput" placeholder="Rechercher..." />
+      <div id="searchResults" class="search-results"></div>
+    </nav>
+  </header>
+<h1>À propos</h1>
+<!-- À inclure dans le <head> si ce n’est pas déjà fait -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<!-- Section À propos -->
+<section id="apropos" style="padding: 50px 20px; background-color: #f9f9f9;">
+  <div style="max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+    
+    <!-- Photo de profil -->
+    <div style="flex: 1; min-width: 250px; text-align: center;">
+      <img src="chemin/vers/ta-photo.jpg" alt="Photo de profil" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; border: 4px solid #007bff;" />
+    </div>
+    
+    <!-- Texte À propos -->
+    <div style="flex: 2; min-width: 300px;">
+      <h2 style="font-size: 28px; margin-bottom: 10px; color: #333;">À propos de moi</h2>
+      <p style="font-size: 16px; color: #555;">
+        Étudiant finaliste en <strong>Informatique de Gestion</strong> à l'<strong>Institut Supérieur de Statistique de Kinshasa (ISS/Kin)</strong>, je suis passionné par les technologies numériques et la manière dont elles transforment la gestion et l’organisation des entreprises.
+      </p>
+      <p style="font-size: 16px; color: #555;">
+        Je maîtrise des outils tels que <strong>Word</strong>, <strong>Excel</strong>, <strong>Photoshop</strong> et <strong>Canva</strong>, ainsi que les langages de <strong>développement web</strong> (HTML, CSS, JavaScript, PHP) et la <strong>gestion de bases de données</strong>.
+      </p>
+      <p style="font-size: 16px; color: #555;">
+        Mon objectif est de participer à la digitalisation des organisations en proposant des solutions innovantes et adaptées. Je suis disponible pour des collaborations, stages ou missions freelance.
+      </p>
+
+      <!-- Bouton vers CV ou contact -->
+      <a href="contact.html" style="display: inline-block; margin-top: 15px; background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Me contacter</a>
+    </div>
+  </div>
+</section>
+
+
+<button onclick="location.href='index.html'">Retour à l'accueil</button>
